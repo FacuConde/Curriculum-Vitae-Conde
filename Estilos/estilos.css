@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap');
+
+* {
+    margin: 0px;
+    font-family: 'Prompt', sans-serif;
+}
+section{
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    padding: 10%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+body {
+      background: linear-gradient(180deg, #87ceeb, #6782c1);
+  height: 100%;
+    background-repeat: no-repeat;
+    background: #bdecff;
+  }
+.titulo {
+    margin: 20px;
+    margin-top: 0px;
+    padding: 10px;
+    text-align: center;
+    font-size: 3vw ;
+}
+
+.subtitulo {
+    font-size: 40px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+header {
+    background-color: #7fbce1;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-inline-start: 0px;
+    background-color: transparent;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+}
+
+ul li {
+    height: 20px;
+    background-color: #240501;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+    line-height: 20px;
+}
+
+footer{
+  background: #10403B;
+  height: 118px;
+  width: 100%;
+  font-size: 15px;
+  bottom: 0px;
+  text-align: center;
+  color: #BFBFBF;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 10px;
+  margin-top: 11vh;
+  box-sizing: border-box;
+}
+footer img{
+  height: 40px;
+}
+.contenedorfotos {
+    display: flex;
+    height: 18vw;
+    margin: 0px 10% 0px 10%;
+    justify-content: space-between;
+}
+
+.contenedortexto span {
+    font-size: 150%;
+    text-align: center;
+    height: 100%;
+}
+.contenedortexto{
+    padding-top: 9px;
+    background-color: #91cbe2;
+    border-radius: 13px;
+    width: 100%;
+    text-align: center;
+}
+.fotos{
+  border: solid black 4px;
+  border-radius: 50%;
+  object-fit: cover;                     
+  width: 18vw;
+}
+.icono{
+  margin-right: 3%;
+  color: black;
+  font-size: 50px;
+  text-align: center;
+}
+.icono:hover{
+  color: white;
+  font-size: 55px;
+}
+.iconos{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 50%;
+  background-color: #4545a1;
+  margin-top: 8px;
+  margin-left: 25%;
+  height: 70px;
+  }
+.fotos:hover {
+  transform: scale(1.1);
+  }
+#check, .checkbtn{
+  display: none;
+}
+/*Smartphones*/
+@media (max-width: 610px){
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 87vh;
+    margin-bottom: 10px;
+    background-color: skyblue;
+    display: none;
+  }
+  ul li a{
+    font-size: 30px;
+  }
+  .checkbtn{
+    display: inline;
+    font-size: 60px;
+    margin-left: 45%;
+    line-height: 0px;
+  }
+  #check:checked ~ ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  .titulo{
+    margin-bottom: 0px;
+  }
+  ul li:hover {
+    transform: none;
+  }
